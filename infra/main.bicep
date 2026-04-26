@@ -109,8 +109,8 @@ param imageTag string = 'latest_2025-11-10_599'
 param containerRegistryEndpoint string = 'cmsacontainerreg.azurecr.io'
 
 @minLength(1)
-@description('Optional. Version of the GPT model to deploy. Defaults to 2024-08-06.')
-param gptModelVersion string = '2024-08-06'
+@description('Optional. Version of the GPT model to deploy. Defaults to 2024-11-20.')
+param gptModelVersion string = '2024-11-20'
 
 @description('Optional. Use this parameter to use an existing AI project resource ID. Defaults to empty string.')
 param existingFoundryProjectResourceId string = ''

@@ -29,6 +29,7 @@ param location string = resourceGroup().location
   'uksouth'
   'westus'
   'westus3'
+  'westus2'
 ])
 @metadata({
   azd : {
@@ -53,6 +54,7 @@ var replicaRegionPairs = {
   southeastasia: 'eastasia'
   uksouth: 'westeurope'
   westeurope: 'northeurope'
+  westus2: 'centralus'
 }
 var replicaLocation = replicaRegionPairs[resourceGroup().location]
 
@@ -1213,4 +1215,4 @@ output MIGRATOR_AGENT_MODEL_DEPLOY string = modelDeployment.name
 output PICKER_AGENT_MODEL_DEPLOY string = modelDeployment.name
 output FIXER_AGENT_MODEL_DEPLOY string = modelDeployment.name
 output SEMANTIC_VERIFIER_AGENT_MODEL_DEPLOY string = modelDeployment.name
-output SYNTAX_CHECKER_AGENT_MODEL_DEPLOY string = modelDeployment.name  
+output SYNTAX_CHECKER_AGENT_MODEL_DEPLOY string = modelDeployment.name
